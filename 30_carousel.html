@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <style>
+        .carousel .item img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="carousel1" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel1" data-slide-to="1"></li>
+                <li data-target="#carousel1" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/1.jpg" />
+
+                    <!--<div class="carousel-caption">
+                        <h1> Headling 1 </h1>
+                        <p> Description 1</p>
+                    </div>-->
+                </div>
+                <div class="item">
+                    <img src="img/2.jpg" />
+                    <!--<div class="carousel-caption">
+                        <h1> Headling 2 </h1>
+                        <p> Description 2</p>
+                    </div>-->
+                </div>
+                <div class="item">
+                    <img src="img/3.jpg" />
+                    <!--<div class="carousel-caption">
+                        <h1> Headling 2 </h1>
+                        <p> Description 2</p>
+                    </div>-->
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel1" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel1" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+</body>
+</html>
