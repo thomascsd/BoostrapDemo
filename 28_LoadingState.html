@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <button id="btn" data-loading-text="Loading..." class="btn btn-primary">Ajax Demo</button>
+    <div id="result"></div>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script  type="text/javascript">
+        $('#btn').on('click', function () {
+            var $self = $(this);
+
+            $self.button('loading');
+            $.post('Demo.ashx').done(function (data) {
+                $('#result').html(data);
+                $self.button('reset');
+            });
+
+        });
+    </script>
+</body>
+</html>
